@@ -1,0 +1,90 @@
+<!doctype html>
+<html> 
+<head> 
+<title>Juegos Aleatorios</title> 
+
+<style>
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+
+img {
+  width: 390px;
+  height: 221px;
+  border-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 30px;
+ }
+
+ a {
+  text-decoration: none;
+  padding: 20px 165px;
+  background-color: #13f304;
+  color: white;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 20px #eee;
+ }
+
+</style>
+
+</head>
+<body>
+<center>
+<img src="https://telegra.ph/file/508e149cf6111172c5bd6.jpg"/>
+<a href="go:juego1" id="enlacealeatorio" class="btn btn-1">Jugar</a>
+</center>
+<script src="script.js">
+document.getElementById(
+ "enlacealeatorio").addEventListener(
+ 'click',
+ function(e) {
+  e.preventDefault();
+  enlaceAleatorio()
+ });
+
+function enlaceAleatorio() {
+ var direcciones = new Array(
+  "go:juego1",
+  "go:juego2",
+  "go:juego3",
+  "go:juego4",
+  "go:juego5",
+  "go:juego6",
+  "go:juego7",
+  "go:juego8",
+  "go:juego9",
+  "go:juego10",
+  "go:juego11",
+  "go:juego12",
+  "go:juego13",
+  "go:juego14",
+  "go:juego15",
+  "go:juego16",
+  "go:juego17",
+  "go:juego18",
+  "go:juego19",
+  "go:juego20",
+  "go:juego21",
+  "go:juego22",
+  "go:juego23",
+  "go:juego24",
+  "go:juego25",
+  "go:juego26",
+  "go:juego27",
+  "go:juego28",
+  "go:juego29",
+  "go:juego30");
+ var aleat = Math.random() * direcciones
+  .length;
+ aleat = Math.floor(aleat);
+ window.location = direcciones[aleat]
+} 
+</script>
+
+ </body> 
+ </html>
